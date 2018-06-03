@@ -1,0 +1,10 @@
+.personagem{
+    position: absolute;
+    top: 35vh;
+    right: 0px;
+    z-index: 99999;
+}
+.personagem img{
+    width: 20vw;
+    height: auto;
+}

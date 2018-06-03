@@ -1,0 +1,12 @@
+<div [@mostrarTitulo]="mostrarTitulo">
+  <div (mouseover)="mousePassou($event)" (mouseleave)="saidaMouse()" class="principal" [@corFundo]="corFundo" (@corFundo.done)="ativarTraco()">
+    <div class="espaco"></div>
+    <p #textoLetra>
+      {{texto}}
+    </p>
+    <div class="borda" [style.width.px]="largura" [style.margin-left.px]="margemEsquerda" [style.background-size.px]="largura+200"
+      [@corBarra]="corBarra" (@corBarra.done)="finalizouCorBarra($event)">
+    </div>
+    <div class="espaco"></div>
+  </div>
+</div>

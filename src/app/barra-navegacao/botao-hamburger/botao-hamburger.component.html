@@ -1,0 +1,5 @@
+<div (click)="mudarEstado()" #barra >
+    <span [@estado1]="estado"></span>
+    <span [@estado2]="estado"></span>
+    <span [@estado3]="estado" (@estado3.done)="finalizarAnimacao()"></span>
+</div>

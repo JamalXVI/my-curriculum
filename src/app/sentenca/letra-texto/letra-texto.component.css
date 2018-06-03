@@ -1,0 +1,36 @@
+.tudo {
+    overflow: hidden;
+    display: inline-block;
+    text-align: initial;
+}
+div{
+    display: inline-block;
+    opacity: 0;
+}
+.letra {
+    --largura:40%;
+    --tamanho: 20px;
+    --cor:#ffffff;
+    position: relative;
+    display:inline-block;
+    overflow:hidden;
+    width: var(--largura);
+    white-space: pre;
+    font-size: var(--tamanho); 
+    color: var(--cor);
+    font-family: "Courier New", sans-serif;
+}
+/*
+.letra:before {
+    display:block;
+    z-index:1;
+    position:absolute;
+    top:0;
+    left:0;
+    width: var(--largura);
+    font-size: var(--tamanho);
+    content: attr(conteudo-letra);
+    overflow:hidden;
+    color: var(--cor);
+}
+*/

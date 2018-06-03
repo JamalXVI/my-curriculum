@@ -1,0 +1,18 @@
+@keyframes bolha{
+    100%{
+        transform: rotate(var(--angulo)) translate(var(--xFinal), var(--yFinal));
+        opacity: 0;
+    }
+}
+
+span{
+    position: absolute;
+    /* top: var(--xInicial);
+    left: var(--yInicial); */
+    margin-left: var(--xInicial);
+    margin-top: var(--yInicial);
+    animation: bolha var(--tempo) linear forwards;
+    transform-style: preserve-3d;
+    transform-origin: var(--xFinal), var(--yFinal);
+    color: white;
+}

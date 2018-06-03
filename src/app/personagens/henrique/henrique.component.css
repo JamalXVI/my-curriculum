@@ -1,0 +1,28 @@
+.personagem{
+    position: absolute;
+    top: calc(295px - (20vw*0.65));
+    right: 0px;
+    z-index: 99999;
+}
+.personagem img{
+    width: 20vw;
+    height: auto;
+}
+.tudo {
+    overflow: hidden;
+    display: inline-block;
+}
+.letra {
+    --larguraNovo:50%;
+    --tamanhoNovo: 100px;
+    --corNovo:#ffffff;
+    position: relative;
+    display:inline-block;
+    overflow:hidden;
+    width: var(--larguraNovo);
+    white-space: pre;
+    font-size: var(--tamanhoNovo); 
+    color: var(--corNovo);
+    font-family: "Courier New", sans-serif;
+    left: -50%;
+}

@@ -1,0 +1,11 @@
+button{
+    background: #F44336;
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
+    border: 2px solid #E53935;
+    opacity: 0.90;
+    margin-left: calc((100%  - 97px) / 2);
+    cursor: pointer;
+}

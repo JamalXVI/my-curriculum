@@ -1,0 +1,14 @@
+<div *ngIf="carregando;then carregar;else rota"></div>
+<ng-template #rota>
+    <app-barra-navegacao [@mostrarBarraB]="mostrarBarra" (@mostrarBarraB.done)="finalizarMostrarBarra($event)" [mostrarBarra]="mostrarBarra" [antesAbrir]="antesAbrir"></app-barra-navegacao>
+    <div class="principal" [@mostrarBarraP]="mostrarBarra">
+        <div>
+            <app-carregar></app-carregar>
+            <app-botao-hamburger (aberta)="mudarEstado($event)" (antesAbrir)="antesAbrirBarra($event)"></app-botao-hamburger>
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+</ng-template>
+<ng-template #carregar>
+    Carregando...
+</ng-template>

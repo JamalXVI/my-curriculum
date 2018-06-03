@@ -1,0 +1,7 @@
+<div [@iniciou]="iniciou" (@iniciou.done)="iniciarComBolhas()">
+<span class="tudo" [attr.style]="sanitizer.bypassSecurityTrustStyle('margin-left: '+espacarLetra()+'px')" #letraInteira>
+  <span   class="letra" [attr.conteudo-letra]="letra" [attr.style]="sanitizer.bypassSecurityTrustStyle('--largura: ' +direita+'%;left:-'+esquerda+'%;--cor:'+rgb2hex()+';--tamanho: '+tamanho+';')" #somenteLetra>{{letra}}</span>
+  <template #saidaBolha>
+  </template>
+</span>
+</div>

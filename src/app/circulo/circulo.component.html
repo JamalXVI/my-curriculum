@@ -1,0 +1,5 @@
+<div [@circulo]='estado' (@circulo.done)="finalizouAnimacaoCirculo($event)" class="circulo">
+  <div [@divImage]="estadoDivImagem" (@divImage.done)="finalizouAnimacoesIntroducao($event)">
+    <img [@caixa]="estadoCaixa" (@caixa.done)="finalizouAnimacaoCaixa($event)" src='./../../assets/images/place-holder.png' />
+  </div>
+</div>

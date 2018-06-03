@@ -1,0 +1,3 @@
+<div>
+  <img [src]="logo" [@logoMoeda]="estado" (@logoMoeda.done)="mudarEstado(e)" (mouseenter)="entrarMouse()" (mouseleave)="sairMouse()" (mouseover)="entrarMouse()" (touchmove)="toque()"/>
+</div>

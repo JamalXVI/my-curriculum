@@ -1,0 +1,10 @@
+<div>
+  <app-circulo (finalizouAnimacoes)="finalizouAnimacaoCirculo($event)">
+  </app-circulo>
+  <div (mouseover)="verIniciarJogo()" (mouseleave)="verDesaparecer()">
+    <app-henrique (emitirAtaque)="emitirAtaque($event)"></app-henrique>
+    <app-sentenca class="nome" [frase]="textoNome" [tamanho]="fontes[0]" [iniciar]="iniciarSetenca" (finalizou)="finalizarFrase(0,$event)" [iniciarJogo]="iniciarJogoEmFrase[0]" (posicao)="mudarPosicao($event)" [causarDano]="verificarDano(0)" (matouLetra)="matouLetra($event)"></app-sentenca>
+    <app-sentenca class="titulo" [frase]="'Full Stack Developer'" [tamanho]="fontes[1]" [iniciar]="demaisFrases[0]" (finalizou)="finalizarFrase(1,$event)"  [iniciarJogo]="iniciarJogoEmFrase[1]"></app-sentenca>
+    <app-botao-jogo [ativo]="ativoBotao" (jogar)="comecarJogo($event)"></app-botao-jogo>
+  </div>
+</div>

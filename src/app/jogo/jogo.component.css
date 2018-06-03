@@ -1,0 +1,22 @@
+div{
+    background-color: #303030 !important;
+    height: 100vh;
+}
+app-sentenca{
+    text-align: center;
+}
+app-circulo{
+    text-align: center;
+}
+app-sentenca{
+    display: block;
+}
+.nome{
+    --nome-texto-principal: 0;
+    margin-left: var(--nome-texto-principal);
+}
+.titulo{
+    --titulo-texto-principal: 0;
+    margin-left: var(--titulo-texto-principal);
+
+}

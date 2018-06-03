@@ -1,0 +1,4 @@
+<div *ngIf="frase">
+  <app-letra-texto *ngFor="let letra of frase.split('');let i = index" [letra]="letra" [tamanho]="tamanho" [indice]="i" (x)="chamarX(i, $event)" (y)="chamarY(i, $event)" (acabou)="acabar(i,$event)" [iniciou]="verificarPodeIniciar(i)" [dano]="verificarDano(i)" (morta)="eMorreu(i,$event)" #letras>
+  </app-letra-texto>
+</div>

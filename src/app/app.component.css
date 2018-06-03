@@ -1,0 +1,21 @@
+app-barra-navegacao{
+  --largura-aberta-b: 200px;
+  --largura-fechada-b: 0%;
+  width: var(--largura-aberta-b);
+  display: inline-flex;
+}
+.principal{
+  --largura-aberta-p: calc(100vw - 200px);
+  --largura-fechada-p: 100%;
+  width: var(--largura-aberta-p);
+  float: right;
+  background-color: #303030 !important;
+}
+@media(max-width:600px){
+  app-barra-navegacao{
+    --largura-aberta-b: 60%;
+  }
+  .principal{
+    --largura-aberta-p: 40%;
+  }
+}

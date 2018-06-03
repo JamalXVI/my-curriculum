@@ -1,0 +1,9 @@
+img{
+    width: calc(100% - 20px);
+    height: auto;
+    margin-left: 10px;
+    margin-top: 15px;
+}
+div{
+    display: inherit;
+}
